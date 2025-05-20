@@ -1,0 +1,27 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl _Silver_
+Ka 0.000000 0.000000 0.000000
+Kd 0.752941 0.752941 0.752941
+Ks 0.330000 0.330000 0.330000
+
+newmtl _OSB__chip_board__1
+Ka 0.000000 0.000000 0.000000
+Kd 0.941176 0.764706 0.478431
+Ks 0.330000 0.330000 0.330000
+map_Kd climbing wall/_OSB__chip_board__1.jpg
+
+newmtl _OSB__chip_board__
+Ka 0.000000 0.000000 0.000000
+Kd 0.949020 0.772549 0.509804
+Ks 0.330000 0.330000 0.330000
+map_Kd climbing wall/_OSB__chip_board__.jpg
+
+newmtl _Metal_floor_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.431373 0.482353
+Ks 0.330000 0.330000 0.330000
+map_Kd climbing wall/_Metal_floor_.jpg
+
