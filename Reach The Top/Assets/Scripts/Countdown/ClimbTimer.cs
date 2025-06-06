@@ -19,6 +19,7 @@ public class ClimbTimer : MonoBehaviour
     }
     public void StartClimbing()
     {
+        Debug.Log("timer starts");
         is_climbing = true;
         climb_time = 0f;
         countdown_text.gameObject.SetActive(true);
