@@ -9,6 +9,9 @@ public class ClimbTimer : MonoBehaviour
     private float climb_time = 0f;
     private bool is_climbing = false;
 
+    // References
+    public FinishUI ui_manager;
+
     private void Update()
     {
         if (is_climbing)
@@ -19,13 +22,21 @@ public class ClimbTimer : MonoBehaviour
     }
     public void StartClimbing()
     {
-        Debug.Log("timer starts");
-        is_climbing = true;
-        climb_time = 0f;
-        countdown_text.gameObject.SetActive(true);
+        if (!is_climbing)
+        {
+            Debug.Log("timer starts");
+            is_climbing = true;
+            climb_time = 0f;
+            countdown_text.gameObject.SetActive(true);
+        }
     }
     public void StopClimbing()
     {
-        is_climbing = false;
+        if (is_climbing)
+        {
+            is_climbing = false;
+            countdown_text.gameObject.SetActive(false);
+            ui_manager.ShowFinishUI(climb_time);
+        }
     }
 }
